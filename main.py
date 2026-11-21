@@ -30,10 +30,15 @@ def main() -> int:
     if not os.path.isfile(path):
         print(f"Missing entry image: {IMAGE}", file=sys.stderr)
         return 1
+    with open(path, "rb") as f:
+        header = f.read(12)
+    if len(header) < 12 or header[:4] != b"RIFF" or header[8:12] != b"WEBP":
+        print(f"Entry image is not a valid WebP file: {IMAGE}", file=sys.stderr)
+        return 1
     size = os.path.getsize(path)
     print(TITLE)
     print(f"Bounty: {BOUNTY}")
-    print(f"Image: {IMAGE} ({size} bytes)")
+    print(f"Image: {IMAGE} ({size} bytes, valid WebP)")
     print("Five stories: ICJ / Myanmar-Rohingya; Kyiv bridges and Poland; "
           "UK-EU post-Brexit deal; Trump-Xi-Putin summit in Shenzhen; Gaza.")
     return 0
