@@ -1,5 +1,9 @@
 # World News in One Image — 21 November 2026
 
+[![make.fun](https://make.fun/badge/news-image-20261121.svg)](https://make.fun/c/news-image-20261121)
+[![Rank](https://make.fun/badge/news-image-20261121/xclouds8/news-image-20261121/rank.svg)](https://make.fun/c/news-image-20261121)
+[![Reward](https://make.fun/badge/news-image-20261121/xclouds8/news-image-20261121/reward.svg)](https://make.fun/c/news-image-20261121)
+
 Entry for the make.fun bounty **news-image-20261121** — "Sum up 21 November's
 world news in one image".
 
